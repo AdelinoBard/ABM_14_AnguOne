@@ -1,0 +1,90 @@
+/* Estilos globais */
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, sans-serif;
+  line-height: 1.5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Seção Hero */
+.hero-section {
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  color: white;
+  flex: 1 0 auto;
+}
+
+/* Ícones de features */
+.feature-icon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 0.75rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+/* Links do footer */
+footer a {
+  text-decoration: none;
+  transition: all 0.3s ease;
+  color: #adb5bd !important;
+}
+
+footer a:hover {
+  opacity: 0.8;
+  color: white !important;
+}
+
+/* Dark mode */
+.dark-mode {
+  background-color: #212529;
+  color: #f8f9fa;
+}
+
+/* Estilos para o conteúdo principal */
+main {
+  flex: 1;
+}
+
+/* Ajustes para imagens responsivas */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilos para os botões da hero section */
+.hero-section .btn {
+  font-weight: 500;
+}
+
+/* Estilos para as seções */
+section {
+  padding: 3rem 0;
+}
+
+/* Estilos para o router outlet */
+router-outlet + * {
+  display: block;
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Ajustes para o tema dark do Bootstrap */
+[data-bs-theme="dark"] {
+  color-scheme: dark;
+}
+
+[data-bs-theme="dark"] .bg-light {
+  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+}

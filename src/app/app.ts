@@ -1,12 +1,14 @@
+// app.component.ts
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
+import { NavbarComponent } from './navbar/navbar';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [CommonModule, RouterModule, NavbarComponent],
   templateUrl: './app.html',
-  styleUrl: './app.scss'
+  styleUrls: ['./app.scss'],
 })
-export class App {
-  protected title = 'AnguOne';
-}
+export class App {}
