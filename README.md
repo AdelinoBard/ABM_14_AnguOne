@@ -1,61 +1,55 @@
-# AnguOne
+# AnguOne - Aplicação Angular Moderna
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.3.
+[![Angular Version](https://img.shields.io/badge/Angular-20.0.3-red.svg)](https://angular.io/)
+[![Material Design](https://img.shields.io/badge/Angular%20Material-Included-blue.svg)](https://material.angular.io/)
+
+Projeto desenvolvido com Angular CLI version 20.0.3, implementando as melhores práticas de desenvolvimento frontend.
+
+## Recursos
+
+- **Performance otimizada**: Lazy loading e estratégias de renderização eficientes
+- **Arquitetura moderna**: Componentes standalone e reutilizáveis
+- **Design responsivo**: Adaptável para todos os dispositivos e tamanhos de tela
+- **Angular Material**: UI components seguindo Material Design
 
 ![alt text](image.png)
 
-## Development server
+### Componentes Principais
 
-To start a local development server, run:
+- **Contact Module**: Implementado com Angular Material para formulários de contato
 
-```bash
-ng serve
-```
+## Começando
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+### Pré-requisitos
 
-## Code scaffolding
+- Node.js (versão 18 ou superior)
+- npm (normalmente vem com Node.js) ou yarn
+- Angular CLI (`npm install -g @angular/cli`)
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+### Instalação
 
-```bash
-ng generate component component-name
-```
+1. Clone o repositório:
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+   ```bash
+   git clone https://github.com/seu-usuario/AnguOne.git
+   ```
 
-```bash
-ng generate --help
-```
+2. Instale as dependências:
 
-## Building
+   ```bash
+   cd AnguOne
+   npm install
+   ```
 
-To build the project run:
+3. Inicie o servidor de desenvolvimento:
 
-```bash
-ng build
-```
+   ```bash
+   ng serve
+   ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+4. Acesse no navegador:
+   ```
+   http://localhost:4200/
+   ```
 
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+---
